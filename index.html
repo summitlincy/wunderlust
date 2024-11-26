@@ -158,20 +158,57 @@ Population
 Population: 923,608
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
+<footer>
+  <section id="contact">
+    <h2>Contact Us</h2>
+      <form>
+        <label for="fname">First Name<span class="required">*</span></label>
+        <input type="text" id="fname" placeholder="Enter first name" required>
 
-Contact Us
-First Name (Enter first name)
-Last Name (Enter last name)
+        <label for="lname">Last Name<span class="required">*</span></label>
+        <input type="text" id="lname" placeholder="Enter last name" required>
 
-Contact Method (Email, Text, Phone)
-Email Address (Enter Email)
-Phone Number (Enter telephone number)
+        <fieldset>
+		    <legend>Contact Method<span class="required">*</span></legend>
+		    <input type="radio" id="contact_email" name="contact_method" value="email">
+		    <label>Email</label>
+        <input type="radio" id="contact_text" name="contact_method" value="text">
+		    <label>Text</label>
+        <input type="radio" id="contact_phone" name="contact_method" value="phone">
+		    <label>Phone</label>
+	      </fieldset>
 
-Destination (Barcelona, Granada, Ibiza, Madrid, Majorca, Seville, Tenerife, Valencia)
-Travel Time (Fall, Winter, Spring, Summer, Flexible)
+        <label for="email">Email<span class="required">*</span></label>
+	      <input type="email" id="email" name="email" required>
 
+        <fieldset>
+					<legend>Destination<span class="required">*</span></legend>
+					<select id="destination" name="destination">
+						<option value="barcelona">Barcelona</option>
+						<option value="granada">Granada</option>
+            <option value="ibiza">Ibiza</option>
+            <option value="madrid">Madrid</option>
+            <option value="majorca">Majorca</option>
+            <option value="seville">Seville</option>
+            <option value="tenerife">Tenerife</option>
+            <option value="valencia">Valencia</option>
+          </select>
+        </fieldset>
 
+        <fieldset>
+          <legend>Travel Time<span class="required">*</span></legend>
+          <select id="season" name="season">
+            <option value="fall">Fall</option>
+            <option value="winter">Winter</option>
+            <option value="spring">Spring</option>
+            <option value="summer">Summer</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </fieldset>
+      </form>
 
 Copyright 2021 Wunderlust
 Privacy Statement
 Terms of Service
+
+</footer>
