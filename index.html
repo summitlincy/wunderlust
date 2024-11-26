@@ -27,25 +27,33 @@
      <section id="majorca">
 	<h2>Majorca</h2>
 	<p>Imagine an island with turquoise blue waters, secret coves, soft golden sands, lush green foliage, rugged mountains, picturesque villages and a vibrant capital city. The island and its capital, Palma, are overflowing with character, while its beaches are famous all around the world, making it one of the most sought-after summer destinations.</p>
-
+	<div>
+		<img
+			src="images/majorca-waves-L.png"
+			alt="majorca waves"
+			srcset="images/majorca-waves-S.png 320w, images/majorca-waves-M.png 780w, images/majorca-waves-L.png 1024w"
+			sizes="(max-width:320px) 320px, (max-width:780px) 780px, 1024px"
+			width="auto"
+			height="auto">
+	</div>
 	<picture>
             <source media="(min-width:1024w)" srcset="images/majorca-waves-L.png">
             <source media="(max-width:780w)" srcset="images/majorca-waves-M.png">
-            <source media="(max-width:320w)" srcset="images/majorca-waves-L.png">
+            <source media="(max-width:320w)" srcset="images/majorca-waves-S.png">
             <img src="images/majorca-waves-L.png" alt="majorca waves">
         </picture>  
 
 	<picture>
             <source media="(min-width:1024w)" srcset="images/majorca-beach-L.png">
             <source media="(max-width:780w)" srcset="images/majorca-beach-M.png">
-            <source media="(max-width:320w)" srcset="images/majorca-beach-L.png">
+            <source media="(max-width:320w)" srcset="images/majorca-beach-S.png">
             <img src="images/majorca-beach-L.png" alt="majorca beach">
         </picture>
 
 	<picture>
             <source media="(min-width:1024w)" srcset="images/majorca-cove-L.png">
             <source media="(max-width:780w)" srcset="images/majorca-cove-M.png">
-            <source media="(max-width:320w)" srcset="images/majorca-cove-L.png">
+            <source media="(max-width:320w)" srcset="images/majorca-cove-S.png">
             <img src="images/majorca-cove-L.png" alt="majorca cove">
         </picture>
 	     
