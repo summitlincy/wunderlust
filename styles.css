@@ -65,30 +65,91 @@ table {
     line-height: 1.35;
 }
 
+body {
+
+}
+
 h1, h2, h3, h4 {
     font-family:
 }
-nav{
-    display:grid;
-}
-#intro{
-}
-#plan{
-}
-#testimonials{
-}
-#about{
-}
-#contact{
-}
-footer{
+
+#skip {
+	position: absolute;
+	top: -40px;
+	left: 10px;
+	background-color: var(--dark-gray);
+	color: white;
+	padding: 10px;
+	text-decoration: none;
+} 
+
+skip:focus {
 }
 
-@media screen and (max-width:320px){
+header{
+    background-color: var(--teal);
+    padding: 10px;
+    text-align: left;
 }
 
-@media screen and (min-width:321px){
+#logo img {
+    max-width: 100%;
+    height: auto;
 }
 
-@media screen and (min-width:750px){
+nav {
+    background-color: var(--yellow);
+    color: #000;
+    text-align: center;
+}
+
+#menu-toggle label {
+    display:block;
+    background-color: var(--teal);
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+}
+
+#main {
+	padding: 10px;
+}
+
+article {
+}
+
+section {
+}
+
+#intro {
+}
+
+#plan {
+}
+
+#testimonials {
+}
+
+#about {
+}
+
+#contact {
+}
+
+form {
+}
+
+footer {
+}
+
+@media screen and (max-width:320px) {
+    #menu-toggle ul {
+	grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:321px) {
+}
+
+@media screen and (min-width:750px) {
 }
