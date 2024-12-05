@@ -48,3 +48,47 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+:root{
+    --teal:#40E0D0;
+    --yellow:#FBEC5D;
+    --blue:#4159E1;
+    --purple: #9400D3;
+    --black: #000;
+    --white: #fff;
+    --light-gray: #eaeaea;
+    --dark-gray: #222;
+}
+
+*{
+    box-sizing: border-box;
+    line-height: 1.35;
+}
+
+h1, h2, h3, h4 {
+    font-family:
+}
+nav{
+    display:grid;
+}
+#intro{
+}
+#plan{
+}
+#testimonials{
+}
+#about{
+}
+#contact{
+}
+footer{
+}
+
+@media screen and (max-width:320px){
+}
+
+@media screen and (min-width:321px){
+}
+
+@media screen and (min-width:750px){
+}
