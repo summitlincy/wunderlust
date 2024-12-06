@@ -130,6 +130,7 @@ nav ul{
 nav ul li {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1rem;
 }
 
@@ -186,18 +187,76 @@ section {
 }
 
 #testimonials {
+    margin: 20px 0;
+}
+
+#testimonials div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+    gap: 15px;
+}
+
+#testimonials section {
+    text-align: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#testimonials section img{
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 #about {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
 }
 
-#contact {
+#about div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+#about section {
+    text-align: center;
 }
 
 form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+form input[type="submit"] {
+    background-color: var(--purple);
+    color: white;
+    text-transform: uppercase; 
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
 }
 
 footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
 }
 
 @media screen and (max-width:320px) {
