@@ -234,7 +234,7 @@ main {
 
 #about section img{
     max-width: 50px;
-    background-color: var(--teal);
+    background-color: var(--blue);
 }
 
 #contact .nums {
