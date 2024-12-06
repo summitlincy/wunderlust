@@ -61,16 +61,20 @@ table {
 }
 
 *{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    line-height: 1.35;
 }
 
 body {
-
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 h1, h2, h3, h4 {
-    font-family: molle, montserrat, sans-serif
+    font-family: 'molle', 'montserrat', sans-serif
 }
 
 #skip {
@@ -88,31 +92,49 @@ skip:focus {
 
 header{
     background-color: var(--teal);
-    padding: 10px;
-    text-align: left;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-#logo img {
-    max-width: 100%;
+header #logo img {
+    max-width: 100px;
+    display:block;
+    margin: 0 auto 10px;
     height: auto;
 }
 
 nav {
     background-color: var(--teal);
-    color: #000;
+    color: white;
     text-align: center;
+    padding: 10px;
 }
 
-#menu-toggle label {
-    display:block;
+nav #menu-toggle label {
+    display: block;
     background-color: var(--dark-gray);
-    color: #000;
+    color: white;
+    font-size: 1.2rem;
     cursor: pointer;
-    text-align: center;
+    padding: 10px;
 }
 
-#main {
-	padding: 10px;
+nav ul{
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+nav ul li {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+main {
+	padding: 20px;
 }
 
 article {
@@ -121,10 +143,46 @@ article {
 section {
 }
 
-#intro {
+#intro h2{
+    font-family: 'Molle', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#intro p{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+#img-grid {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+#img-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 #plan {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+#plan section {
+    text-align: center;
+    background-color: var(--yellow);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#plan section img {
+    max-width: 50px;
+    margin-bottom: 10px;
 }
 
 #testimonials {
