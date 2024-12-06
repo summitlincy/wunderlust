@@ -87,6 +87,9 @@ h1, h2, h3, h4 {
 	text-decoration: none;
 } 
 
+skip:focus {
+}
+
 header{
     background-color: var(--teal);
     color: white;
@@ -101,11 +104,14 @@ header #logo img {
     height: auto;
 }
 
-#menu-toggle input[type="checkbox"] {
-    display:none;
+nav {
+    background-color: var(--teal);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-#menu-toggle label {
+nav #menu-toggle label {
     display: block;
     background-color: var(--dark-gray);
     color: white;
@@ -115,19 +121,17 @@ header #logo img {
 }
 
 nav ul{
-    display: flex;
-    justify-content: none;
-    list-style: none;
-    gap: 15px;    
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
 }
 
-#menu-toggle ul {
-    flex-direction: column;
-    gap: 5px;
-}
-
-#menu-toggle input[type="checkbox"]:checked + label + ul {
-    display: flex;
+nav ul li {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 main {
@@ -226,7 +230,7 @@ main {
 }
 
 #about section img{
-    max-width: 100%;
+    max-width: auto;
 }
 
 #contact .nums {
@@ -242,13 +246,17 @@ main {
 }
 
 form input, form select {
-@@ -252,38 +253,42 @@
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
     border: 1px solid #333;
 }
 
 form fieldset{
     display: block;
 }
+
 form input[type="submit"] {
     background-color: var(--purple);
     color: white;
@@ -274,10 +282,6 @@ footer a {
 }
 
 @media screen and (max-width:320px) {
-    nav ul {
-	display: none;
-    }
-
     #menu-toggle{
         display: block;
     }
