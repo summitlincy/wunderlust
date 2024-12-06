@@ -73,17 +73,8 @@ body {
     background-color: #f9f9f9;
 }
 
-h1, h2{
-    font-family: 'Molle', serif;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-header p{
-    font-size: 1rem;
+h1, h2, h3, h4 {
+    font-family: 'molle', 'montserrat', sans-serif
 }
 
 #skip {
@@ -108,13 +99,6 @@ header #logo img {
     display:block;
     margin: 0 auto 10px;
     height: auto;
-}
-
-nav {
-    background-color: var(--teal);
-    color: white;
-    text-align: center;
-    padding: 10px;
 }
 
 #menu-toggle{
@@ -151,13 +135,6 @@ nav ul{
     display: flex;
 }
 
-nav li a{
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-
 main {
 	padding: 20px;
 }
@@ -174,7 +151,7 @@ main {
 }
 
 #img-grid {
-    display: grid;
+    display:grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
@@ -190,16 +167,6 @@ main {
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
-}
-
-#plan h3{
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-}
-
-#plan div {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 
 #plan section {
@@ -219,8 +186,7 @@ main {
 }
 
 #testimonials h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+    font-size: 2rem;
 }
 
 #testimonials div{
@@ -234,6 +200,12 @@ main {
     background-color: white;
     padding: 15px;
     border-radius: 5px;
+}
+
+#testimonials section img{
+    max-width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
 }
 
 #about {
@@ -275,17 +247,13 @@ main {
 }
 
 form input, form select {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
+@@ -252,38 +253,42 @@
     border: 1px solid #333;
 }
 
 form fieldset{
     display: block;
 }
-
 form input[type="submit"] {
     background-color: var(--purple);
     color: white;
