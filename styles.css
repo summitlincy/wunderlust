@@ -73,8 +73,14 @@ body {
     background-color: #f9f9f9;
 }
 
-h1, h2, h3, h4 {
-    font-family: 'molle', 'montserrat', sans-serif
+header h1 {
+    font-family: 'Molle', serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+header p{
+    font-size: 1rem;
 }
 
 #skip {
@@ -86,9 +92,6 @@ h1, h2, h3, h4 {
 	padding: 10px;
 	text-decoration: none;
 } 
-
-skip:focus {
-}
 
 header{
     background-color: var(--teal);
@@ -121,13 +124,13 @@ nav #menu-toggle label {
 }
 
 nav ul{
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
+    display: flex;
+    justify-content: none;
+    list-style: none;
+    gap: 15px;    
 }
 
-nav ul li {
+nav ul li a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -150,7 +153,7 @@ main {
 }
 
 #img-grid {
-    display:grid;
+    display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
 }
@@ -166,6 +169,16 @@ main {
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
+}
+
+#plan h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 #plan section {
@@ -185,7 +198,8 @@ main {
 }
 
 #testimonials h3 {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
 }
 
 #testimonials div{
@@ -199,12 +213,6 @@ main {
     background-color: white;
     padding: 15px;
     border-radius: 5px;
-}
-
-#testimonials section img{
-    max-width: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
 }
 
 #about {
@@ -282,13 +290,44 @@ footer a {
 }
 
 @media screen and (max-width:320px) {
-    #menu-toggle ul {
-	grid-template-columns: 1fr;
+    nav ul {
+	display: none;
+    }
+
+    #menu-toggle{
+        display: block;
+    }
+
+    #plan div, #testimonials div, #about div {
+        grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width:321px) {
+@media screen and (min-width:321px) and (max-width:750px) {
+    nav ul{
+        flex-direction: row;
+	gap: 10px;
+    }
+
+    #plan div{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #testimonials div, #about div{
+        grid-template-columns: repeat(2, 1fr);
+    }	
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:751px) {
+    #plan div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #testimonials div{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    #about div{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
