@@ -138,12 +138,6 @@ main {
 	padding: 20px;
 }
 
-article {
-}
-
-section {
-}
-
 #intro h2{
     font-family: 'Molle', serif;
     font-size: 2rem;
@@ -190,6 +184,10 @@ section {
     margin: 20px 0;
 }
 
+#testimonials h3 {
+    font-size: 2rem;
+}
+
 #testimonials div{
     display: grid;
     grid-template-columns: repeat(2, 1fr)
@@ -226,7 +224,11 @@ section {
     text-align: center;
 }
 
-form {
+#contact .nums {
+    display: block;
+}
+
+#form {
     background-color: white;
     padding: 20px;
     border-radius: 5px;
