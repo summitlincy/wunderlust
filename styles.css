@@ -242,6 +242,7 @@ main {
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
+    border-color: var(--purple);
 }
 
 form input, form select {
@@ -250,6 +251,10 @@ form input, form select {
     margin: 10px 0;
     border-radius: 5px;
     border: 1px solid #333;
+}
+
+form fieldset{
+    display: block;
 }
 
 form input[type="submit"] {
