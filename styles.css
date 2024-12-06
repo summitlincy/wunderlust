@@ -101,11 +101,7 @@ header #logo img {
     height: auto;
 }
 
-#menu-toggle{
-    display: none;
-}
-
-#menu-toggle input[type="checkbox] {
+#menu-toggle input[type="checkbox"] {
     display:none;
 }
 
@@ -126,7 +122,6 @@ nav ul{
 }
 
 #menu-toggle ul {
-    display: none;
     flex-direction: column;
     gap: 5px;
 }
@@ -231,7 +226,7 @@ main {
 }
 
 #about section img{
-    max-width: auto;
+    max-width: 100%;
 }
 
 #contact .nums {
