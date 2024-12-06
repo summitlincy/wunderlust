@@ -208,7 +208,7 @@ main {
 }
 
 #about {
-    background-color: white;
+    background-color: var(--teal);
     padding: 20px;
     border-radius: 5px;
     margin: 20px 0;
@@ -223,6 +223,9 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
 }
 
 #about section {
