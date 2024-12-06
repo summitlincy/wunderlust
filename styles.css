@@ -214,6 +214,11 @@ main {
     margin: 20px 0;
 }
 
+#about h3{
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
 #about div {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -222,6 +227,11 @@ main {
 
 #about section {
     text-align: center;
+}
+
+#about section img{
+    max-width: 50px;
+    background-color: var(--teal);
 }
 
 #contact .nums {
