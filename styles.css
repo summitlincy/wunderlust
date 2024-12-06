@@ -114,7 +114,15 @@ nav {
     padding: 10px;
 }
 
-nav #menu-toggle label {
+#menu-toggle{
+    display: none;
+}
+
+#menu-toggle input[type="checkbox] {
+    display:none;
+}
+
+#menu-toggle label {
     display: block;
     background-color: var(--dark-gray);
     color: white;
@@ -130,7 +138,17 @@ nav ul{
     gap: 15px;    
 }
 
-nav ul li a{
+#menu-toggle ul {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#menu-toggle input[type="checkbox"]:checked + label + ul {
+    display: flex;
+}
+
+nav li a{
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -319,6 +337,11 @@ footer a {
 }
 
 @media screen and (min-width:751px) {
+
+    nav ul{
+        flex-direction: row;
+	gap: 10px;
+    }
     #plan div{
         grid-template-columns: repeat(4, 1fr);
     }
